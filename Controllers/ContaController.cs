@@ -13,7 +13,7 @@ namespace ContasAPI.Controllers {
             _context = context;
         }
 
-        // POST: api/Contas
+        // POST: api/Conta
         [HttpPost]
         public async Task<ActionResult<Conta>> PostConta(Conta conta) {
 
@@ -26,7 +26,20 @@ namespace ContasAPI.Controllers {
             }
 
             conta.DiasAtraso = (conta.DataPagamento - conta.DataVencimento).Days;
-            conta.ValorCorrigido = CalcularValorCorrigido(conta);
+            
+            var regra = _context.RegrasNegocio
+                .Where(r => conta.DiasAtraso >= r.DiasEmAtraso)
+                .OrderByDescending(r => r.DiasEmAtraso)
+                .FirstOrDefault();
+
+            if (regra != null) {
+                conta.ValorCorrigido = conta.ValorOriginal 
+                                    + conta.ValorOriginal * regra.Multa 
+                                    + conta.ValorOriginal * regra.JurosPorDia * conta.DiasAtraso;
+            }
+            else {
+                conta.ValorCorrigido = conta.ValorOriginal;
+            }
 
             _context.Contas.Add(conta);
             await _context.SaveChangesAsync();
@@ -34,13 +47,13 @@ namespace ContasAPI.Controllers {
             return CreatedAtAction(nameof(GetConta), new { id = conta.Id }, conta);
         }
 
-        // GET: api/Contas
+        // GET: api/Conta
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Conta>>> GetContas() {
             return await _context.Contas.ToListAsync();
         }
 
-        // GET: api/Contas/5
+        // GET: api/Conta/1
         [HttpGet("{id}")]
         public async Task<ActionResult<Conta>> GetConta(int id) {
             var conta = await _context.Contas.FindAsync(id);
