@@ -17,21 +17,25 @@ namespace ContasAPI.Controllers {
         [HttpPost]
         public async Task<ActionResult<Conta>> PostConta(Conta conta) {
 
+            // Verifica se a conta ou algum dos parâmetros obrigatórios é nulo ou vazio
             if (conta == null || string.IsNullOrEmpty(conta.Nome) || conta.ValorOriginal == 0 || conta.DataVencimento == DateTime.MinValue || conta.DataPagamento == DateTime.MinValue) {
                 return BadRequest("Todos os parâmetros obrigatórios devem ser fornecidos.");
             }
 
+            // Verifica se já existe uma conta cadastrada com a mesma data de pagamento
             if (_context.Contas.Any(c => c.DataPagamento == conta.DataPagamento)) {
                 return Conflict("Já existe uma conta cadastrada com essa data de pagamento.");
             }
 
             conta.DiasAtraso = (conta.DataPagamento - conta.DataVencimento).Days;
             
+            // Busca no banco a regra de negócio apropriada
             var regra = _context.RegrasNegocio
                 .Where(r => conta.DiasAtraso >= r.DiasEmAtraso)
                 .OrderByDescending(r => r.DiasEmAtraso)
                 .FirstOrDefault();
 
+            // Aplica os cálculos da regra de negócio
             if (regra != null) {
                 conta.ValorCorrigido = conta.ValorOriginal 
                                     + conta.ValorOriginal * regra.Multa 
