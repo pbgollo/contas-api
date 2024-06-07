@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContasAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a166712f4ed2c8f685890e8434bd42ec713e681")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0e8b4916c015695d42e3eee1883f0c7ec2c6345")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContasAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContasAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
