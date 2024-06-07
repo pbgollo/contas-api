@@ -31,8 +31,7 @@ Para instalar e configurar a API de Lista de Contas, siga estas etapas:
 - Configure o banco de dados MySQL no arquivo appsettings.json
 - Execute os seguintes comandos no terminal do projeto para aplicar as migrações e atualizar o banco de dados:
 ```
-dotnet ef migrations add InitialCreate
-dotnet ef database update
+dotnet ef database update --context DataBaseContext
 ```
 
 Após configurar o projeto, você pode executá-lo para iniciar a API, utilizando o seguinte comando:
