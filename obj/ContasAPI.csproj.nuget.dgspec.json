@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pgollo\\Desktop\\Pedro\\Projetos\\ContasAPI\\ContasAPI.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Códigos\\contas-api\\ContasAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pgollo\\Desktop\\Pedro\\Projetos\\ContasAPI\\ContasAPI.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Códigos\\contas-api\\ContasAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pgollo\\Desktop\\Pedro\\Projetos\\ContasAPI\\ContasAPI.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Códigos\\contas-api\\ContasAPI.csproj",
         "projectName": "ContasAPI",
-        "projectPath": "C:\\Users\\pgollo\\Desktop\\Pedro\\Projetos\\ContasAPI\\ContasAPI.csproj",
-        "packagesPath": "C:\\Users\\pgollo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pgollo\\Desktop\\Pedro\\Projetos\\ContasAPI\\obj\\",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Códigos\\contas-api\\ContasAPI.csproj",
+        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Códigos\\contas-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pgollo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

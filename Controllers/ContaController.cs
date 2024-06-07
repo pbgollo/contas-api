@@ -64,27 +64,5 @@ namespace ContasAPI.Controllers {
 
             return conta;
         }
-
-        private decimal CalcularValorCorrigido(Conta conta) {
-            decimal valorCorrigido = conta.ValorOriginal;
-            int diasAtraso = conta.DiasAtraso;
-
-            if (diasAtraso > 0) {
-                if (diasAtraso <= 3) {
-                    valorCorrigido += conta.ValorOriginal * 0.02m;
-                    valorCorrigido += conta.ValorOriginal * 0.001m * diasAtraso;
-                }
-                else if (diasAtraso <= 10) {
-                    valorCorrigido += conta.ValorOriginal * 0.03m;
-                    valorCorrigido += conta.ValorOriginal * 0.002m * diasAtraso;
-                }
-                else {
-                    valorCorrigido += conta.ValorOriginal * 0.05m;
-                    valorCorrigido += conta.ValorOriginal * 0.003m * diasAtraso;
-                }
-            }
-
-            return valorCorrigido;
-        }
     }
 }
