@@ -28,11 +28,11 @@
 **Ator Principal:** Usuário
 
 **Fluxo Principal:**
-- 1. O Usuário insere os dados da conta e submete-os.
-- 2. O Sistema verifica se todos os campos obrigatórios foram preenchidos.
-- 3. O Sistema verifica se já existe uma conta cadastrada com a mesma data de pagamento.
-- 4. O Sistema calcula a quantidade de dias em atraso e aplica as regras de cálculo, se necessário.
-- 5. A conta é persistida no banco de dados.
+1. O Usuário insere os dados da conta e submete-os.
+2. O Sistema verifica se todos os campos obrigatórios foram preenchidos.
+3. O Sistema verifica se já existe uma conta cadastrada com a mesma data de pagamento.
+4. O Sistema calcula a quantidade de dias em atraso e aplica as regras de cálculo, se necessário.
+5. A conta é persistida no banco de dados.
 
 **Fluxo Alternativo:**
 - Se algum dos campos obrigatórios não for preenchido, o sistema exibe uma mensagem de erro.
@@ -43,8 +43,8 @@
 **Ator Principal:** Usuário
 
 **Fluxo Principal:**
-- 1. O Usuário solicita a listagem das contas cadastradas.
-- 2. O Sistema retorna a lista de contas com os dados solicitados.
+1. O Usuário solicita a listagem das contas cadastradas.
+2. O Sistema retorna a lista de contas com os dados solicitados.
 
 **Fluxo Alternativo:**
 - Se não houver nenhuma conta cadastrada, o sistema retorna uma lista vazia.
