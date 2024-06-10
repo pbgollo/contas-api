@@ -41,6 +41,38 @@ Após configurar o projeto, você pode executá-lo para iniciar a API, utilizand
 dotnet run
 ```
 
+## 🛠 Endpoints da API
+
+### Incluir Conta
+- Endpoint: POST /api/Conta
+- Descrição: Adiciona uma nova conta a pagar.
+- Exemplo de Corpo da Requisição:
+```
+{
+  "nome": "Conta de Luz",
+  "valorOriginal": 150.75,
+  "dataVencimento": "2024-06-15",
+  "dataPagamento": "2024-06-18"
+}
+```
+
+### Listar Contas
+- Endpoint: GET /api/Conta
+- Descrição: Lista todas as contas cadastradas.
+- Exemplo de Resposta:
+```
+[
+  {
+    "id": 1,
+    "nome": "Conta de Luz",
+    "valorOriginal": 150.75,
+    "valorCorrigido": 153.76,
+    "diasAtraso": 3,
+    "dataPagamento": "2024-06-18"
+  }
+]
+```
+
 ## 🤝 Colaboradores
 
 <table>
