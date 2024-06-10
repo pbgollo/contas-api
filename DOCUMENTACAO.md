@@ -21,9 +21,9 @@
   - **Mais de 3 dias de atraso:** Multa de 3% e Juros de 0,2% ao dia.
   - **Mais de 10 dias de atraso:** Multa de 5% e Juros de 0,3% ao dia.
 
-## 👤 Casos de Uso
+## 👨🏼‍💻 Casos de Uso
 
-### Inclusão de Conta:
+### UC01 - Inclusão de Conta
 
 **Ator Principal:** Usuário
 
@@ -38,7 +38,7 @@
 - Se algum dos campos obrigatórios não for preenchido, o sistema exibe uma mensagem de erro.
 - Se já existir uma conta cadastrada com a mesma data de pagamento, o sistema exibe uma mensagem de erro.
 
-### Listagem das Contas Cadastradas:
+### UC02 - Listagem das Contas Cadastradas
 
 **Ator Principal:** Usuário
 
@@ -49,7 +49,7 @@
 **Fluxo Alternativo:**
 - Se não houver nenhuma conta cadastrada, o sistema retorna uma lista vazia.
 
-## 💾 Modelo ER
+## 💾 Modelo Lógico de Dados
 
 ### Conta
 - Id (PK)
