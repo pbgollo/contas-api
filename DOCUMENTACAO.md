@@ -1,5 +1,7 @@
 # 📄 Documentação Técnica do Projeto
 
+Este arquivo contém os artefatos elaborados durante a fase de concepção do projeto. Inclui especificações detalhadas das funcionalidades e requisitos, regras de negócio, casos de uso, e o modelo lógico de dados que estruturam e guiam o desenvolvimento do sistema.
+
 ## 🖥️ Requisitos Funcionais
 
 - O sistema deve permitir a inclusão de contas, exigindo os seguintes campos: Nome, Valor Original, Data de Vencimento e Data de Pagamento.
