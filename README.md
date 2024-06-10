@@ -41,7 +41,7 @@ Após configurar o projeto, você pode executá-lo para iniciar a API, utilizand
 dotnet run
 ```
 
-## 🛠 Endpoints da API
+## 🌐 Endpoints da API
 
 ### Incluir Conta
 - Endpoint: POST /api/Conta
