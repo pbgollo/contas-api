@@ -6,7 +6,7 @@
 
 # <img src="imagem.png" alt="Print do Postman">
 
-> Este projeto é uma API RESTful desenvolvida utilizando o framework .NET Core 8 e a linguagem de programação C#. A API permite aos usuários realizar operações de inclusão e listagem de contas a pagar, seguindo as regras de negócio especificadas.
+> Este projeto é uma API RESTful desenvolvida utilizando o framework .NET Core 8 e a linguagem de programação C#. A API permite aos usuários realizar operações de inclusão e listagem de contas, seguindo as regras de negócio especificadas.
 
 ## 🔧 Tecnologias Utilizadas
 
@@ -45,7 +45,7 @@ dotnet run
 
 ### Incluir Conta
 - Endpoint: POST /api/Conta
-- Descrição: Adiciona uma nova conta a pagar.
+- Descrição: Adiciona uma nova conta.
 - Exemplo de Corpo da Requisição:
 ```
 {
