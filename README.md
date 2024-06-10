@@ -10,26 +10,28 @@
 
 ## 🔧 Tecnologias Utilizadas
 
-No projeto, as principais tecnologias adotadas foram o .NET Core 8 e a linguagem de programação C#.
+No projeto, as principais tecnologias adotadas foram o .NET Core 8 e a linguagem de programação C#. Os dados são armazenados em um banco de dados relacional MySQL e manipuladas usando Entity Framework Core.
 
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atende aos seguintes requisitos:
 
 - Você tem uma máquina com o .NET Core SDK instalado
-- Você tem um editor de código compatível com o .NET Core, como o Visual Studio ou o Visual Studio Code
+- Você tem um editor de código compatível com o .NET Core, como o Visual Studio Code
 - Você tem um banco de dados MySQL configurado e acessível pela aplicação
 
 ## 🚀 Instalando a API
-Para instalar e configurar a API de Lista de Contas, siga estas etapas:
+
+Para instalar e configurar a API, siga estas etapas:
 
 - Clone este repositório para o seu ambiente local
 - Abra o projeto no seu editor de código preferido
 - Configure o banco de dados MySQL no arquivo appsettings.json
-- Execute os seguintes comandos no terminal do projeto para aplicar as migrações e atualizar o banco de dados:
+- Execute o seguinte comando no terminal do projeto para aplicar as migrações e atualizar o banco de dados:
 ```
 dotnet ef database update --context DataBaseContext
 ```
