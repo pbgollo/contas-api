@@ -73,6 +73,13 @@ dotnet run
 ]
 ```
 
+## 📄 Documentação
+
+Para mais detalhes sobre o projeto, consulte o arquivo [DOCUMENTACAO.md](DOCUMENTACAO.md), que contém a documentação técnica e informações sobre a concepção do projeto.
+
+
+
+
 ## 🤝 Colaboradores
 
 <table>
